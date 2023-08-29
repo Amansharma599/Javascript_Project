@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-App-LB</title>
+
+    <!-- Font Awsome CDN-Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class=" w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-5">
+        <div class="text-[#0398d4] font-medium text-[20px]]">Increment And Decrement</div>
+
+        <div class="bg-white flex text-[25px] border[#344151] rounded-sm gap-10 p-3 p-x-5">
+
+            <!-- Negative Button -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div id="counter" class="font-bold">
+                0                    
+            </div>
+
+              <!-- Negative Button -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+            </button>
+
+        </div>
+        <button onclick="reset()" class="rounded-lg bg-blue-600 py-2 px-4 ">Reset Button</button>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
